@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HalfBlind.ScriptableVariables;
+using System;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
@@ -7,6 +8,7 @@ public class EnemyController : MonoBehaviour {
     [SerializeField] private float _radious = 2;
     [SerializeField] private float _attackRange;
     [SerializeField] private float _attackSpeedSeconds = 1;
+    [SerializeField] private GlobalBoolean _isGamePaused;
 
     public event Action OnEnemydied;
 
@@ -21,6 +23,10 @@ public class EnemyController : MonoBehaviour {
     }
 
     private void Update() {
+        if (_isGamePaused.Value) {
+            return;
+        }
+
         var position = transform.position;
         var targetPosition = _player.transform.position + _offset;
         var direction = (targetPosition - position).normalized;

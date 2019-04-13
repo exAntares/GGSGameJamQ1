@@ -52,6 +52,7 @@ MonoBehaviour:
   _radious: 2
   _attackRange: 5
   _attackSpeedSeconds: 1
+  _isGamePaused: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
 --- !u!114 &17455666245286413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,6 +69,7 @@ MonoBehaviour:
   _currentGlobalHealth: {fileID: 0}
   _maxGlobalHealth: {fileID: 0}
   _damageTaken: {fileID: 0}
+  _onDamageTaken: {fileID: 0}
   _onDied: {fileID: 0}
 --- !u!114 &1619042045440170876
 MonoBehaviour:

@@ -432,7 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.66030276
+  m_Length: 0.6603033
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 7769432637503583393}
   m_AttachedIK: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 5664074181654891110}
   - component: {fileID: 8649169388903165707}
   m_Layer: 0
-  m_Name: Hand
+  m_Name: HandGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -589,12 +589,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3184844672844845623}
-  m_LocalRotation: {x: -0, y: -0, z: -0.045328315, w: 0.9989722}
-  m_LocalPosition: {x: 0.6337338, y: -0.00155285, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.14757018, w: 0.9890516}
+  m_LocalPosition: {x: 0.07562044, y: -0.017351598, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4971868615713011710}
-  m_RootOrder: 1
+  m_Father: {fileID: 8177657504278365375}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8649169388903165707
 SpriteRenderer:
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.66030335
+  m_Length: 0.66030306
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4971868615713011710}
   m_AttachedIK: {fileID: 0}
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.42692518
+  m_Length: 0.40307307
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 8937722606259285442}
   m_AttachedIK: {fileID: 0}
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.6603033
+  m_Length: 0.6603031
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 8874577283588489788}
   m_AttachedIK: {fileID: 0}
@@ -1245,6 +1245,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6812847772716862689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8177657504278365375}
+  - component: {fileID: 8332853763431684680}
+  m_Layer: 0
+  m_Name: HandBone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8177657504278365375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6812847772716862689}
+  m_LocalRotation: {x: 0, y: 0, z: 0.10258651, w: 0.99472415}
+  m_LocalPosition: {x: 0.5561641, y: -0.000000033527613, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5664074181654891110}
+  - {fileID: 3760526040799392293}
+  m_Father: {fileID: 4971868615713011710}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.776001}
+--- !u!114 &8332853763431684680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6812847772716862689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b157d7625014c58bfbad3513f40289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Length: 1
+  m_Child: {fileID: 0}
+  m_ChildTransform: {fileID: 0}
+  m_AttachedIK: {fileID: 0}
 --- !u!1 &7093269160820290429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,7 +1800,7 @@ GameObject:
   - component: {fileID: 8407944828037797131}
   - component: {fileID: 1373912677774182173}
   m_Layer: 0
-  m_Name: Armdown
+  m_Name: ArmdownGraphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1865,7 +1915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.37463093
+  m_Length: 0.3746309
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 6267682507940137151}
   m_AttachedIK: {fileID: 0}
@@ -1972,7 +2022,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8731978654890048532}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2168,7 +2218,7 @@ GameObject:
   - component: {fileID: 3760526040799392293}
   - component: {fileID: 8950315735551412502}
   m_Layer: 0
-  m_Name: Weapon01
+  m_Name: WeaponGraphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2181,12 +2231,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9085069491463814663}
-  m_LocalRotation: {x: -0, y: -0, z: -0.045328315, w: 0.9989722}
-  m_LocalPosition: {x: 0.671, y: 0.01, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.14757018, w: 0.9890516}
+  m_LocalPosition: {x: 0.11446016, y: -0.0136478, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4971868615713011710}
-  m_RootOrder: 2
+  m_Father: {fileID: 8177657504278365375}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8950315735551412502
 SpriteRenderer:
@@ -2247,7 +2297,7 @@ GameObject:
   - component: {fileID: 4971868615713011710}
   - component: {fileID: 259465078863577657}
   m_Layer: 0
-  m_Name: LowerArm
+  m_Name: LowerArmBone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2265,8 +2315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8407944828037797131}
-  - {fileID: 5664074181654891110}
-  - {fileID: 3760526040799392293}
+  - {fileID: 8177657504278365375}
   m_Father: {fileID: 7213140226276339793}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 73.466}
@@ -2283,7 +2332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1
+  m_Length: 0.5561641
   m_Child: {fileID: 0}
-  m_ChildTransform: {fileID: 0}
+  m_ChildTransform: {fileID: 8177657504278365375}
   m_AttachedIK: {fileID: 0}

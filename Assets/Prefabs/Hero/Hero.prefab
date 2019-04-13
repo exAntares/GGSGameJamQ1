@@ -49,10 +49,11 @@ MonoBehaviour:
   _gravity: 8.9
   _minMaxX: {x: 0, y: 60}
   _minMaxY: {x: 0, y: 30}
-  _attackSpeedSeconds: 1
+  _attackSpeedSeconds: 0.5
   _areaOfAttack: 4
   _areaOfAttackOffset: {x: 3, y: 1, z: 0}
   _damage: 5
+  _animator: {fileID: 1492635862766446887}
 --- !u!114 &3885015578840529569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +198,12 @@ PrefabInstance:
 --- !u!4 &5300650790582019626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8396289968367583593, guid: dcaf5b1981a6fe142896a2100742592c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4398377408146777923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1492635862766446887 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3007494818281737828, guid: dcaf5b1981a6fe142896a2100742592c,
     type: 3}
   m_PrefabInstance: {fileID: 4398377408146777923}
   m_PrefabAsset: {fileID: 0}

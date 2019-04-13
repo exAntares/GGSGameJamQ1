@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 
 public class EquipmentComponent : MonoBehaviour {
+    public Vector2 RandomRangeNewEquipment = new Vector2(1, 6);
     public ScriptableGameEvent _onKilledAllEnemies;
     public ScriptableEquipment _hat;
     public ScriptableEquipment _weapon;
@@ -34,13 +35,13 @@ public class EquipmentComponent : MonoBehaviour {
             case EquipmentType.Helmet:
                 sprite = _possibleHats[UnityEngine.Random.Range(0, _possibleHats.Length)];
                 _hat.value.Graphics = sprite;
-                _hat.value.ExtraHealth += UnityEngine.Random.Range(0, 5);
+                _hat.value.ExtraHealth += Mathf.FloorToInt(UnityEngine.Random.Range(RandomRangeNewEquipment.x, RandomRangeNewEquipment.y));
                 newItem = _hat;
                 break;
             case EquipmentType.Weapon:
                 sprite = _possibleWeapons[UnityEngine.Random.Range(0, _possibleWeapons.Length)];
                 _weapon.value.Graphics = sprite;
-                _weapon.value.ExtraDamage += UnityEngine.Random.Range(0, 5);
+                _weapon.value.ExtraDamage += Mathf.FloorToInt(UnityEngine.Random.Range(RandomRangeNewEquipment.x, RandomRangeNewEquipment.y)); ;
                 newItem = _weapon;
                 break;
             default:

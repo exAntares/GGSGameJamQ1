@@ -8,13 +8,13 @@ public class HeroController : MonoBehaviour {
     [SerializeField] private float _areaOfAttack = 1;
     [SerializeField] private Vector3 _areaOfAttackOffset;
     [SerializeField] private int _damage = 5;
+    [SerializeField] private Animator _animator;
 
     private Vector2 Impulse = Vector2.zero;
     private float lastSign = 1;
     private EnemySpawner _enemies;
     private HealthComponent _healthComp;
     private float _lastAttack;
-    
 
     private void Awake() {
         _enemies = FindObjectOfType<EnemySpawner>();
@@ -56,6 +56,7 @@ public class HeroController : MonoBehaviour {
         if (Time.time - _lastAttack > _attackSpeedSeconds) {
             _lastAttack = Time.time;
             Debug.Log("Player Attacked!");
+            _animator.Play("Attack");
             var actualOffset = _areaOfAttackOffset;
             actualOffset.x *= transform.localScale.x;
             _enemies.TakeDamage(transform.position + actualOffset, _damage, _areaOfAttack);

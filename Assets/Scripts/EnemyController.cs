@@ -14,12 +14,14 @@ public class EnemyController : MonoBehaviour {
 
     private HeroController _player;
     private HealthComponent _healthComp;
+    private Animator _animator;
     private float _lastAttack;
 
     private void Awake() {
         _player = FindObjectOfType<HeroController>();
         _healthComp = GetComponent<HealthComponent>();
         _healthComp.OnEnemyDied += () => OnEnemydied?.Invoke();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     private void Update() {
@@ -47,6 +49,8 @@ public class EnemyController : MonoBehaviour {
     }
 
     public void TakeDamage(int damage) {
-        _healthComp.TakeDamage(damage);
+        if (_healthComp.TakeDamage(damage)) {
+            _animator.Play("OnHit");
+        }
     }
 }

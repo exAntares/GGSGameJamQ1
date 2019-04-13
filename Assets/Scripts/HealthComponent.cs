@@ -35,9 +35,9 @@ public class HealthComponent : MonoBehaviour {
         _currentHealth = MaxHealth;
     }
 
-    public void TakeDamage(int v) {
+    public bool TakeDamage(int v) {
         if(Health <= 0) {
-            return;
+            return false;
         }
         Health -= v;
         Health = Health <= 0 ? 0 : Health;
@@ -49,5 +49,7 @@ public class HealthComponent : MonoBehaviour {
             OnEnemyDied?.Invoke();
             gameObject.SetActive(false);
         }
+
+        return true;
     }
 }

@@ -1045,13 +1045,13 @@ GameObject:
   - component: {fileID: 2112264744}
   - component: {fileID: 2112264743}
   - component: {fileID: 2112264742}
-  - component: {fileID: 2112264741}
   - component: {fileID: 2112264740}
   - component: {fileID: 2112264739}
   - component: {fileID: 2112264738}
   - component: {fileID: 2112264737}
   - component: {fileID: 2112264736}
   - component: {fileID: 2112264735}
+  - component: {fileID: 2112264741}
   m_Layer: 5
   m_Name: TextLevel
   m_TagString: Untagged
@@ -1444,11 +1444,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2112264733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74c8beeddb0679442a1c25737bfac1a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 897a00302aa0b0a41af82c93fa1b7cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 2112264742}
-  position: {x: 184, y: -264}
+  position: {x: 312, y: -296}
   ports:
     keys:
     - FlowOutput
@@ -1464,8 +1464,7 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _dynamic: 0
-  _name: On Global Event
-  GameEvent: {fileID: 0}
+  _name: On Start
 --- !u!114 &2112264742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,13 +1478,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 2112264741}
   - {fileID: 2112264740}
   - {fileID: 2112264739}
   - {fileID: 2112264738}
   - {fileID: 2112264737}
   - {fileID: 2112264736}
   - {fileID: 2112264735}
+  - {fileID: 2112264741}
 --- !u!114 &2112264743
 MonoBehaviour:
   m_ObjectHideFlags: 0

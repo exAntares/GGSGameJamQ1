@@ -7,6 +7,7 @@ public class HealthComponent : MonoBehaviour {
     [SerializeField] private GlobalFloat _currentGlobalHealth;
     [SerializeField] private GlobalFloat _maxGlobalHealth;
     [SerializeField] private GlobalListFloat _damageTaken;
+    [SerializeField] private ScriptableGameEvent _onDamageTaken;
     [SerializeField] private ScriptableGameEvent _onDied;
 
     public event Action OnEnemyDied;
@@ -42,6 +43,7 @@ public class HealthComponent : MonoBehaviour {
         Health = Health <= 0 ? 0 : Health;
         Debug.Log($"{name} Taking {v} damage, new Health {Health}");
         _damageTaken?.Value.Add(v);
+        _onDamageTaken?.SendEvent();
         if (Health <= 0) {
             _onDied?.SendEvent();
             OnEnemyDied?.Invoke();

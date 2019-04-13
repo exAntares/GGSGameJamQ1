@@ -149,8 +149,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyPrefabs:
   - {fileID: 8809372172185866159, guid: 41cff00ebf39b9141abc20f361b1c76d, type: 3}
+  - {fileID: 3576829200228815581, guid: c458c11f559fef04aa16c31c0d6b0af2, type: 3}
   _currentLevel: {fileID: 11400000, guid: 4ff05dca8b42f674a95684de3a8e8043, type: 2}
   _onAllEnemiesDied: {fileID: 11400000, guid: 444a2e21165819f4687db3bdca615dc0, type: 2}
+  _healthFactor: 5
 --- !u!4 &373262708
 Transform:
   m_ObjectHideFlags: 0

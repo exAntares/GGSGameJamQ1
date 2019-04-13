@@ -112,6 +112,105 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50092568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50092569}
+  - component: {fileID: 50092572}
+  - component: {fileID: 50092571}
+  - component: {fileID: 50092570}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &50092569
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50092568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 781040790}
+  m_Father: {fileID: 1525005450}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &50092570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50092568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &50092571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50092568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &50092572
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50092568}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!212 &341915042 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 6571162103469933946, guid: 79e84f7b1626f8e4a96f8727f9b0779a,
@@ -173,7 +272,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1754899083}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695367980}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 760e55d7b34ec6548bb78319ac7d7aec, type: 3}
@@ -287,8 +386,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685096410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 22.637, y: -0.2954, z: 0}
+  m_LocalScale: {x: 1.14, y: 1.14, z: 1.14}
   m_Children:
   - {fileID: 970576947}
   - {fileID: 1015108891}
@@ -308,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 685096415}
-  position: {x: 216, y: -88}
+  position: {x: 344, y: -56}
   ports:
     keys:
     - WaitSeconds
@@ -338,10 +437,7 @@ MonoBehaviour:
       _node: {fileID: 685096412}
       _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: FlowInput
-        node: {fileID: 685096416}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _dynamic: 0
@@ -360,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 685096415}
-  position: {x: -24, y: -104}
+  position: {x: 56, y: -72}
   ports:
     keys:
     - Target
@@ -381,7 +477,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: FlowOutput
-        node: {fileID: 685096414}
+        node: {fileID: 685096416}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -413,7 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 685096415}
-  position: {x: -328, y: -104}
+  position: {x: -568, y: -56}
   ports:
     keys:
     - FlowOutput
@@ -424,7 +520,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: FlowInput
-        node: {fileID: 685096413}
+        node: {fileID: 685096416}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -457,212 +553,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 685096410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb1ad129ee22e924589c4522f2ce58c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 83b12a2a0cc728444bca38470440e619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 685096415}
-  position: {x: 184, y: 136}
+  position: {x: -168, y: 72}
   ports:
     keys:
+    - WaitSeconds
     - FlowInput
     - FlowOutput
     values:
+    - _fieldName: WaitSeconds
+      _node: {fileID: 685096416}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
     - _fieldName: FlowInput
       _node: {fileID: 685096416}
       _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: FlowOutput
-        node: {fileID: 685096412}
+        node: {fileID: 685096414}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _dynamic: 0
     - _fieldName: FlowOutput
       _node: {fileID: 685096416}
-      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _dynamic: 0
-  _name: Send Global Event
-  GameEvent: {fileID: 11400000, guid: 28f47a72d480f7c42aa348cca2660e03, type: 2}
---- !u!1 &695367980 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4558802602853102153, guid: 2af9551a22960db4092bd7a191ecdea5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1754899083}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &695367981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695367980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 695367985}
-  position: {x: 2175.2454, y: 323.64014}
-  ports:
-    keys:
-    - Input
-    - Target
-    - FlowInput
-    - FlowOutput
-    values:
-    - _fieldName: Input
-      _node: {fileID: 695367981}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
-    - _fieldName: Target
-      _node: {fileID: 695367981}
-      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _node: {fileID: 695367981}
-      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 695367982}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _node: {fileID: 695367981}
-      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _dynamic: 0
-  _name: Bool To Global Bool
-  Input: 0
-  Target: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
---- !u!114 &695367982 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1754899088, guid: 2af9551a22960db4092bd7a191ecdea5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1754899083}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695367980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb1ad129ee22e924589c4522f2ce58c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &695367983 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1754899089, guid: 2af9551a22960db4092bd7a191ecdea5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1754899083}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695367980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb1ad129ee22e924589c4522f2ce58c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &695367984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695367980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 695367985}
-  position: {x: 104, y: 312}
-  ports:
-    keys:
-    - Input
-    - Target
-    - FlowInput
-    - FlowOutput
-    values:
-    - _fieldName: Input
-      _node: {fileID: 695367984}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
-    - _fieldName: Target
-      _node: {fileID: 695367984}
-      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
-    - _fieldName: FlowInput
-      _node: {fileID: 695367984}
-      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: FlowOutput
-        node: {fileID: 695367987}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
-    - _fieldName: FlowOutput
-      _node: {fileID: 695367984}
       _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: FlowInput
-        node: {fileID: 695367983}
+        node: {fileID: 685096413}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _dynamic: 0
-  _name: Bool To Global Bool
-  Input: 1
-  Target: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
---- !u!114 &695367985 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1754899083}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695367980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50eb01a099c629748b4b5134ff954189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &695367987 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1152588186, guid: 2af9551a22960db4092bd7a191ecdea5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1754899083}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695367980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _name: Wait
+  WaitSeconds: 0.5
 --- !u!1 &712733487
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +643,137 @@ MonoBehaviour:
   _onPlayerLost: {fileID: 11400000, guid: 331090b635f39424db4083d138dc5343, type: 2}
   _onPlayerWon: {fileID: 11400000, guid: 28f47a72d480f7c42aa348cca2660e03, type: 2}
   _currentLevel: {fileID: 11400000, guid: 4ff05dca8b42f674a95684de3a8e8043, type: 2}
+--- !u!1 &770338455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770338458}
+  - component: {fileID: 770338457}
+  - component: {fileID: 770338456}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &770338456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770338455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &770338457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770338455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &770338458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770338455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &781040787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781040790}
+  - component: {fileID: 781040789}
+  - component: {fileID: 781040788}
+  m_Layer: 5
+  m_Name: NextLevel Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &781040788
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781040787}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ad461fc3c5f9ad42b5d004847fa3368, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!222 &781040789
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781040787}
+  m_CullTransparentMesh: 0
+--- !u!224 &781040790
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781040787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2145637635}
+  m_Father: {fileID: 50092569}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 834, y: 0}
+  m_SizeDelta: {x: 842, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &898934106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -784,6 +848,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddf6fbf0a22b98c41bc473950a9cd0f3, type: 3}
+--- !u!1 &931344574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931344575}
+  - component: {fileID: 931344577}
+  - component: {fileID: 931344576}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &931344575
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931344574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2145637635}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000045776, y: 51}
+  m_SizeDelta: {x: 399.4, y: 59.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &931344576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931344574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "FLYING TO CAR \n"
+--- !u!222 &931344577
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931344574}
+  m_CullTransparentMesh: 0
 --- !u!1 &970576946
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,20 +984,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
-    - target: {fileID: 6777168435519763851, guid: 79e84f7b1626f8e4a96f8727f9b0779a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3365425642261931085, guid: 79e84f7b1626f8e4a96f8727f9b0779a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.047
       objectReference: {fileID: 0}
     - target: {fileID: 3365425642261931085, guid: 79e84f7b1626f8e4a96f8727f9b0779a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.8529
       objectReference: {fileID: 0}
     - target: {fileID: 3365425642261931085, guid: 79e84f7b1626f8e4a96f8727f9b0779a,
         type: 3}
@@ -958,6 +1096,674 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1525005446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525005450}
+  - component: {fileID: 1525005449}
+  - component: {fileID: 1525005448}
+  - component: {fileID: 1525005454}
+  - component: {fileID: 1525005453}
+  - component: {fileID: 1525005452}
+  - component: {fileID: 1525005456}
+  - component: {fileID: 1525005455}
+  - component: {fileID: 1525005451}
+  - component: {fileID: 1525005461}
+  - component: {fileID: 1525005460}
+  - component: {fileID: 1525005459}
+  - component: {fileID: 1525005458}
+  - component: {fileID: 1525005457}
+  m_Layer: 0
+  m_Name: NextLevelCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1525005448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c8beeddb0679442a1c25737bfac1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: -792, y: -472}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005448}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005457}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: On Global Event
+  GameEvent: {fileID: 11400000, guid: 444a2e21165819f4687db3bdca615dc0, type: 2}
+--- !u!114 &1525005449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50eb01a099c629748b4b5134ff954189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1525005448}
+  - {fileID: 1525005454}
+  - {fileID: 1525005453}
+  - {fileID: 1525005452}
+  - {fileID: 1525005456}
+  - {fileID: 1525005455}
+  - {fileID: 1525005451}
+  - {fileID: 1525005461}
+  - {fileID: 1525005460}
+  - {fileID: 1525005459}
+  - {fileID: 1525005458}
+  - {fileID: 1525005457}
+--- !u!4 &1525005450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: -0.13583195, z: 65.89143}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 50092569}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1525005451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b12a2a0cc728444bca38470440e619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: 456, y: -200}
+  ports:
+    keys:
+    - WaitSeconds
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: WaitSeconds
+      _node: {fileID: 1525005451}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 1525005451}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1525005454}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005451}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005452}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Wait
+  WaitSeconds: 0.8
+--- !u!114 &1525005452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ad129ee22e924589c4522f2ce58c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: 728, y: -184}
+  ports:
+    keys:
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: FlowInput
+      _node: {fileID: 1525005452}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1525005451}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005452}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Send Global Event
+  GameEvent: {fileID: 11400000, guid: 28f47a72d480f7c42aa348cca2660e03, type: 2}
+--- !u!114 &1525005453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b12a2a0cc728444bca38470440e619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: 152, y: -424}
+  ports:
+    keys:
+    - WaitSeconds
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: WaitSeconds
+      _node: {fileID: 1525005453}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 1525005453}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1525005457}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005453}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005454}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Wait
+  WaitSeconds: 5
+--- !u!114 &1525005454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e108e6ab82f5c74f8c839bafc9966f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: 424, y: -392}
+  ports:
+    keys:
+    - Target
+    - StateName
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 1525005454}
+      _typeQualifiedName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: StateName
+      _node: {fileID: 1525005454}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 1525005454}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1525005453}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005454}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005451}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Play Animation
+  Target: {fileID: 781040788}
+  StateName: GoingIn@NewLevelPannel
+--- !u!114 &1525005455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e108e6ab82f5c74f8c839bafc9966f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: 360, y: -696}
+  ports:
+    keys:
+    - Target
+    - StateName
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 1525005455}
+      _typeQualifiedName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: StateName
+      _node: {fileID: 1525005455}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 1525005455}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1525005460}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005455}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Play Animation
+  Target: {fileID: 781040788}
+  StateName: GoingOut@NewLevelPannel
+--- !u!114 &1525005456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897a00302aa0b0a41af82c93fa1b7cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: -408, y: -792}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005456}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005460}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: On Start
+--- !u!114 &1525005457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3914601464562214b9d382e97903d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: -120, y: -440}
+  ports:
+    keys:
+    - Target
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 1525005457}
+      _typeQualifiedName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Text
+      _node: {fileID: 1525005457}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 1525005458}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 1525005457}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Result
+        node: {fileID: 1525005458}
+        reroutePoints: []
+      - fieldName: FlowOutput
+        node: {fileID: 1525005448}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005457}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005453}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Set Text
+  Target: {fileID: 2091688937}
+  Text: 
+--- !u!114 &1525005458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edef491b6b1c704d9419c082bff2f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: -264, y: -264}
+  ports:
+    keys:
+    - FloatA
+    - FloatB
+    - Result
+    values:
+    - _fieldName: FloatA
+      _node: {fileID: 1525005458}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 1525005459}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FloatB
+      _node: {fileID: 1525005458}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Result
+      _node: {fileID: 1525005458}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005457}
+        reroutePoints: []
+      - fieldName: Text
+        node: {fileID: 1525005457}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Add Float
+  FloatA: 0
+  FloatB: 1
+  MyOperation: 0
+  Result: 0
+--- !u!114 &1525005459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: -536, y: -312}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 1525005459}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 1525005459}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: FloatA
+        node: {fileID: 1525005458}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 4ff05dca8b42f674a95684de3a8e8043, type: 2}
+  Output: 0
+--- !u!114 &1525005460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3914601464562214b9d382e97903d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: 120, y: -808}
+  ports:
+    keys:
+    - Target
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 1525005460}
+      _typeQualifiedName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Text
+      _node: {fileID: 1525005460}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 1525005461}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 1525005460}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1525005456}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1525005460}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1525005455}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Set Text
+  Target: {fileID: 2091688937}
+  Text: 
+--- !u!114 &1525005461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525005446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1525005449}
+  position: {x: -248, y: -616}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 1525005461}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 1525005461}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Text
+        node: {fileID: 1525005460}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 4ff05dca8b42f674a95684de3a8e8043, type: 2}
+  Output: 0
 --- !u!1001 &1754899083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -973,12 +1779,12 @@ PrefabInstance:
     - target: {fileID: 5763812382233666447, guid: 2af9551a22960db4092bd7a191ecdea5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.59
+      value: -12.014
       objectReference: {fileID: 0}
     - target: {fileID: 5763812382233666447, guid: 2af9551a22960db4092bd7a191ecdea5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.27
+      value: -1.4703
       objectReference: {fileID: 0}
     - target: {fileID: 5763812382233666447, guid: 2af9551a22960db4092bd7a191ecdea5,
         type: 3}
@@ -1025,45 +1831,162 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1152588185, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: position.y
-      value: 88
-      objectReference: {fileID: 0}
-    - target: {fileID: 1152588186, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: position.x
-      value: 136
-      objectReference: {fileID: 0}
-    - target: {fileID: 1152588186, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: position.y
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 1152588187, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: position.x
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 1152588187, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: position.y
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: nodes.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: nodes.Array.data[6]
-      value: 
-      objectReference: {fileID: 695367984}
-    - target: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: nodes.Array.data[7]
-      value: 
-      objectReference: {fileID: 695367981}
-    - target: {fileID: 1754899089, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: position.x
-      value: 408
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754899089, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
-      propertyPath: position.y
-      value: 296
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+--- !u!1 &2091688935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091688936}
+  - component: {fileID: 2091688938}
+  - component: {fileID: 2091688937}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2091688936
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091688935}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2145637635}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -16, y: -43.6}
+  m_SizeDelta: {x: 399.4, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2091688937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091688935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 100
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: '3
+
+'
+--- !u!222 &2091688938
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091688935}
+  m_CullTransparentMesh: 0
+--- !u!1 &2145637634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2145637635}
+  - component: {fileID: 2145637637}
+  - component: {fileID: 2145637636}
+  m_Layer: 5
+  m_Name: NextLevel Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2145637635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145637634}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 931344575}
+  - {fileID: 2091688936}
+  m_Father: {fileID: 781040790}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 842, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2145637636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145637634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &2145637637
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145637634}
+  m_CullTransparentMesh: 0

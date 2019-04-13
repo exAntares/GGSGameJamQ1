@@ -71,6 +71,7 @@ MonoBehaviour:
     type: 2}
   _maxGlobalHealth: {fileID: 11400000, guid: 7d5c2872b3c7dc24c992556aaac7fb4b, type: 2}
   _damageTaken: {fileID: 11400000, guid: 2546d525974307049a70f6e11e11555a, type: 2}
+  _onDamageTaken: {fileID: 11400000, guid: de4d7e63b9f3dad4aba8a01863837fad, type: 2}
   _onDied: {fileID: 11400000, guid: f97b72cc6a6c68c49bf287c55e6e70db, type: 2}
 --- !u!114 &7480471711935542084
 MonoBehaviour:
@@ -84,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760e55d7b34ec6548bb78319ac7d7aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RandomRangeNewEquipment: {x: 1, y: 6}
   _onKilledAllEnemies: {fileID: 11400000, guid: 444a2e21165819f4687db3bdca615dc0,
     type: 2}
   _hat: {fileID: 11400000, guid: dc26d523da0b5dc43823a5a2ab1429fb, type: 2}

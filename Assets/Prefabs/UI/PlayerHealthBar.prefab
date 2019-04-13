@@ -1095,6 +1095,8 @@ GameObject:
   - component: {fileID: 3256170810257067165}
   - component: {fileID: 1236691329355357865}
   - component: {fileID: 2009782630399456226}
+  - component: {fileID: 395774962405788061}
+  - component: {fileID: 7711532913501423798}
   m_Layer: 5
   m_Name: PlayerHealthBar
   m_TagString: Untagged
@@ -1428,6 +1430,9 @@ MonoBehaviour:
       - fieldName: FlowInput
         node: {fileID: 3256170810257067165}
         reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 7711532913501423798}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _dynamic: 0
@@ -1458,6 +1463,7 @@ MonoBehaviour:
   - {fileID: 3256170810257067165}
   - {fileID: 1236691329355357865}
   - {fileID: 2009782630399456226}
+  - {fileID: 7711532913501423798}
 --- !u!114 &1299846996771080436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1753,6 +1759,84 @@ MonoBehaviour:
   - {fileID: 1299846996846619646}
   - {fileID: 1299846995507216816}
   Options: 1
+--- !u!95 &395774962405788061
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299846996771080428}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5600a3bd8613b404f9de063af79f68b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7711532913501423798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299846996771080428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e108e6ab82f5c74f8c839bafc9966f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1299846996771080435}
+  position: {x: 40, y: 456}
+  ports:
+    keys:
+    - Target
+    - StateName
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 7711532913501423798}
+      _typeQualifiedName: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: StateName
+      _node: {fileID: 7711532913501423798}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 7711532913501423798}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1299846996771080434}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 7711532913501423798}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Play Animation
+  Target: {fileID: 395774962405788061}
+  StateName: Damaged@HealthBar
 --- !u!1 &1299846996823945432
 GameObject:
   m_ObjectHideFlags: 0

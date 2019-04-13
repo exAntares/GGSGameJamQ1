@@ -1,11 +1,9 @@
-﻿using System;
-using HalfBlind.ScriptableVariables;
+﻿using HalfBlind.ScriptableVariables;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TrainController : MonoBehaviour {
     public ScriptableGameEvent _onHeroDied;
-    public ScriptableGameEvent _onAllEnemiesDied;
 
     public ScriptableGameEvent _onPlayerLost;
     public ScriptableGameEvent _onPlayerWon;
@@ -14,7 +12,6 @@ public class TrainController : MonoBehaviour {
 
     private void Awake() {
         _onHeroDied.AddListener(OnHeroDied);
-        _onAllEnemiesDied.AddListener(OnAllEnemiesDied);
 
         _onPlayerLost.AddListener(OnPlayerLost);
         _onPlayerWon.AddListener(OnPlayerWon);
@@ -22,7 +19,6 @@ public class TrainController : MonoBehaviour {
 
     private void OnDestroy() {
         _onHeroDied.RemoveListener(OnHeroDied);
-        _onAllEnemiesDied.RemoveListener(OnAllEnemiesDied);
 
         _onPlayerLost.RemoveListener(OnPlayerLost);
         _onPlayerWon.RemoveListener(OnPlayerWon);

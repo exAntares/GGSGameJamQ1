@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.1
-  _offset: {x: 1, y: 1, z: 0}
+  _offset: {x: 0.1, y: 0.5, z: 0}
   _radious: 2
   _attackRange: 4
   _attackSpeedSeconds: 1

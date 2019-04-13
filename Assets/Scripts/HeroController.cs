@@ -7,6 +7,7 @@ public class HeroController : MonoBehaviour {
     [SerializeField] private float _attackSpeedSeconds = 1;
     [SerializeField] private float _areaOfAttack = 1;
     [SerializeField] private Vector3 _areaOfAttackOffset;
+    [SerializeField] private int _damage = 5;
 
     private Vector2 Impulse = Vector2.zero;
     private float lastSign = 1;
@@ -21,6 +22,7 @@ public class HeroController : MonoBehaviour {
         var equipments = GetComponent<EquipmentComponent>();
         _healthComp.MaxHealth += equipments.GetExtraHealth();
         _healthComp.Health = _healthComp.MaxHealth;
+        _damage += equipments.GetExtraDamage();
     }
 
     private void FixedUpdate() {
@@ -56,7 +58,7 @@ public class HeroController : MonoBehaviour {
             Debug.Log("Player Attacked!");
             var actualOffset = _areaOfAttackOffset;
             actualOffset.x *= transform.localScale.x;
-            _enemies.TakeDamage(transform.position + actualOffset, 5, _areaOfAttack);
+            _enemies.TakeDamage(transform.position + actualOffset, _damage, _areaOfAttack);
         }
     }
 

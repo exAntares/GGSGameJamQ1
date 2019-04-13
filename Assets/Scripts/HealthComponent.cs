@@ -1,23 +1,51 @@
-﻿using UnityEngine;
+﻿using HalfBlind.ScriptableVariables;
+using System;
+using UnityEngine;
 
 public class HealthComponent : MonoBehaviour {
-    [SerializeField] private int _maxHealth = 0;
-    private int _currentHealth;
-    private EquipmentComponent _equipmentComponent;
+    [SerializeField] private int _maxHealth = 10;
+    [SerializeField] private GlobalFloat _currentGlobalHealth;
+    [SerializeField] private GlobalFloat _maxGlobalHealth;
+    [SerializeField] private GlobalListFloat _damageTaken;
+    [SerializeField] private ScriptableGameEvent _onDied;
 
-    public int MaxHealth => _maxHealth + _equipmentComponent.GetExtraHealth();
+    public event Action OnEnemyDied;
+    private int _currentHealth;
+
+    public int MaxHealth { get => _maxHealth; set => _maxHealth = value; }
 
     public int Health {
         get => _currentHealth;
-        set => _currentHealth = Mathf.Max(value, MaxHealth);
+        set {
+            _currentHealth = Mathf.Min(value, MaxHealth);
+            if (_currentGlobalHealth) {
+                _currentGlobalHealth.Value = _currentHealth;
+            }
+        }
     }
 
-    private void Awake() {
-        _equipmentComponent = GetComponent<EquipmentComponent>();
-        _currentHealth = MaxHealth;
+    private void Update() {
+        if (_maxGlobalHealth && _maxGlobalHealth.Value != MaxHealth) {
+            _maxGlobalHealth.Value = MaxHealth;
+        }
     }
 
     public void Reset() {
         _currentHealth = MaxHealth;
+    }
+
+    public void TakeDamage(int v) {
+        if(Health <= 0) {
+            return;
+        }
+        Health -= v;
+        Health = Health <= 0 ? 0 : Health;
+        Debug.Log($"{name} Taking {v} damage, new Health {Health}");
+        _damageTaken?.Value.Add(v);
+        if (Health <= 0) {
+            _onDied?.SendEvent();
+            OnEnemyDied?.Invoke();
+            gameObject.SetActive(false);
+        }
     }
 }

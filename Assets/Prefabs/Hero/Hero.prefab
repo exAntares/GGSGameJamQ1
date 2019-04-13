@@ -49,6 +49,9 @@ MonoBehaviour:
   _gravity: 8.9
   _minMaxX: {x: 0, y: 60}
   _minMaxY: {x: 0, y: 30}
+  _attackSpeedSeconds: 1
+  _areaOfAttack: 4
+  _areaOfAttackOffset: {x: 3, y: 1, z: 0}
 --- !u!114 &3885015578840529569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +65,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 10
+  _currentGlobalHealth: {fileID: 11400000, guid: a08c9ddc6a4609a4d8b4498d612776f1,
+    type: 2}
+  _maxGlobalHealth: {fileID: 11400000, guid: 7d5c2872b3c7dc24c992556aaac7fb4b, type: 2}
+  _damageTaken: {fileID: 11400000, guid: 2546d525974307049a70f6e11e11555a, type: 2}
+  _onDied: {fileID: 11400000, guid: f97b72cc6a6c68c49bf287c55e6e70db, type: 2}
 --- !u!114 &7480471711935542084
 MonoBehaviour:
   m_ObjectHideFlags: 0

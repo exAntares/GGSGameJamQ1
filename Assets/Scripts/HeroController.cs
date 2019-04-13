@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using HalfBlind.ScriptableVariables;
+using UnityEngine;
 
 public class HeroController : MonoBehaviour {
     [SerializeField] private float _gravity = 8.9f;
@@ -9,6 +10,7 @@ public class HeroController : MonoBehaviour {
     [SerializeField] private Vector3 _areaOfAttackOffset;
     [SerializeField] private int _damage = 5;
     [SerializeField] private Animator _animator;
+    [SerializeField] private GlobalBoolean _controllerActive;
 
     private Vector2 Impulse = Vector2.zero;
     private float lastSign = 1;
@@ -26,6 +28,10 @@ public class HeroController : MonoBehaviour {
     }
 
     private void FixedUpdate() {
+        if (!_controllerActive.Value) {
+            return;
+        }
+
         if (Input.GetButton("Fire")) {
             Attack();
         }

@@ -63,6 +63,7 @@ MonoBehaviour:
   _areaOfAttackOffset: {x: 3, y: 1, z: 0}
   _damage: 5
   _animator: {fileID: 1492635862766446887}
+  _controllerActive: {fileID: 11400000, guid: 19b0c95db6a76634cb8be1d79cce7ae9, type: 2}
 --- !u!114 &3885015578840529569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,15 +659,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 25.435001
       objectReference: {fileID: 0}
+    - target: {fileID: 1002304090212087141, guid: dcaf5b1981a6fe142896a2100742592c,
+        type: 3}
+      propertyPath: m_Length
+      value: 0.42692518
+      objectReference: {fileID: 0}
     - target: {fileID: 1211701214406030928, guid: dcaf5b1981a6fe142896a2100742592c,
         type: 3}
       propertyPath: m_Length
       value: 0.66030264
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035675825005785595, guid: dcaf5b1981a6fe142896a2100742592c,
-        type: 3}
-      propertyPath: m_Length
-      value: 0.6603033
       objectReference: {fileID: 0}
     - target: {fileID: 1412808384945515893, guid: dcaf5b1981a6fe142896a2100742592c,
         type: 3}
@@ -677,6 +678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Length
       value: 0.3746307
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035675825005785595, guid: dcaf5b1981a6fe142896a2100742592c,
+        type: 3}
+      propertyPath: m_Length
+      value: 0.6603033
       objectReference: {fileID: 0}
     - target: {fileID: 259465078863577657, guid: dcaf5b1981a6fe142896a2100742592c,
         type: 3}

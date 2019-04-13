@@ -173,7 +173,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1754899083}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 695367980}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 760e55d7b34ec6548bb78319ac7d7aec, type: 3}
@@ -488,6 +488,181 @@ MonoBehaviour:
       _dynamic: 0
   _name: Send Global Event
   GameEvent: {fileID: 11400000, guid: 28f47a72d480f7c42aa348cca2660e03, type: 2}
+--- !u!1 &695367980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4558802602853102153, guid: 2af9551a22960db4092bd7a191ecdea5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1754899083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &695367981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695367980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 695367985}
+  position: {x: 2175.2454, y: 323.64014}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 695367981}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 695367981}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 695367981}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 695367982}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 695367981}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Bool To Global Bool
+  Input: 0
+  Target: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
+--- !u!114 &695367982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1754899088, guid: 2af9551a22960db4092bd7a191ecdea5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1754899083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695367980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ad129ee22e924589c4522f2ce58c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &695367983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1754899089, guid: 2af9551a22960db4092bd7a191ecdea5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1754899083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695367980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb1ad129ee22e924589c4522f2ce58c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &695367984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695367980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 695367985}
+  position: {x: 104, y: 312}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 695367984}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 695367984}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 695367984}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 695367987}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 695367984}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 695367983}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Bool To Global Bool
+  Input: 1
+  Target: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
+--- !u!114 &695367985 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1754899083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695367980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50eb01a099c629748b4b5134ff954189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &695367987 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1152588186, guid: 2af9551a22960db4092bd7a191ecdea5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1754899083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695367980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &712733487
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +775,11 @@ PrefabInstance:
     - target: {fileID: 1193357452691678147, guid: ddf6fbf0a22b98c41bc473950a9cd0f3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193357452691678147, guid: ddf6fbf0a22b98c41bc473950a9cd0f3,
+        type: 3}
+      propertyPath: m_LocalScale.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -793,12 +973,12 @@ PrefabInstance:
     - target: {fileID: 5763812382233666447, guid: 2af9551a22960db4092bd7a191ecdea5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -11.59
       objectReference: {fileID: 0}
     - target: {fileID: 5763812382233666447, guid: 2af9551a22960db4092bd7a191ecdea5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.27
       objectReference: {fileID: 0}
     - target: {fileID: 5763812382233666447, guid: 2af9551a22960db4092bd7a191ecdea5,
         type: 3}
@@ -844,6 +1024,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152588185, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: position.y
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152588186, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: position.x
+      value: 136
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152588186, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: position.y
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152588187, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: position.x
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152588187, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: position.y
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: nodes.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: nodes.Array.data[6]
+      value: 
+      objectReference: {fileID: 695367984}
+    - target: {fileID: 1152588188, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: nodes.Array.data[7]
+      value: 
+      objectReference: {fileID: 695367981}
+    - target: {fileID: 1754899089, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: position.x
+      value: 408
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754899089, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}
+      propertyPath: position.y
+      value: 296
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af9551a22960db4092bd7a191ecdea5, type: 3}

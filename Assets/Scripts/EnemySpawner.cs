@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour {
     [SerializeField] private EnemyController[] _enemyPrefabs;
     [SerializeField] private GlobalFloat _currentLevel;
     [SerializeField] private ScriptableGameEvent _onAllEnemiesDied;
+    [SerializeField] private int _healthFactor = 5;
 
     private int _enemiesDead;
     private int _spawnedEnemies;
@@ -25,7 +26,7 @@ public class EnemySpawner : MonoBehaviour {
                 instance.transform.position = targetPos;
                 instance.OnEnemydied += OnEnemyDied;
                 var healthComp = instance.GetComponent<HealthComponent>();
-                healthComp.MaxHealth = ((int)_currentLevel.Value + 1) * 10;
+                healthComp.MaxHealth = ((int)_currentLevel.Value + 1) * _healthFactor;
                 healthComp.Health = healthComp.MaxHealth;
                 _allEnemies.Add(instance);
             }

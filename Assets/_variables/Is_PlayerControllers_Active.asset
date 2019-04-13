@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d244bed9807c9b84dbd83f32434fc4c9, type: 3}
-  m_Name: OnNewLevelIn
+  m_Script: {fileID: 11500000, guid: d7e7bab020cd2e948a648c968ff92987, type: 3}
+  m_Name: Is_PlayerControllers_Active
   m_EditorClassIdentifier: 
-  _hiddenButton: 
+  _initialValue: 1

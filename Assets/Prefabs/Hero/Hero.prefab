@@ -19,6 +19,8 @@ GameObject:
   - component: {fileID: 1152588184}
   - component: {fileID: 1754899089}
   - component: {fileID: 1754899088}
+  - component: {fileID: 695367981}
+  - component: {fileID: 695367984}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -61,6 +63,7 @@ MonoBehaviour:
   _areaOfAttackOffset: {x: 3, y: 1, z: 0}
   _damage: 5
   _animator: {fileID: 1492635862766446887}
+  _controllerActive: {fileID: 11400000, guid: 19b0c95db6a76634cb8be1d79cce7ae9, type: 2}
 --- !u!114 &3885015578840529569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1152588188}
-  position: {x: 872, y: 56}
+  position: {x: 872, y: 88}
   ports:
     keys:
     - Target
@@ -185,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1152588188}
-  position: {x: 520, y: 24}
+  position: {x: 136, y: 72}
   ports:
     keys:
     - Input
@@ -247,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1152588188}
-  position: {x: 216, y: -72}
+  position: {x: -120, y: 72}
   ports:
     keys:
     - FlowOutput
@@ -283,6 +286,8 @@ MonoBehaviour:
   - {fileID: 1152588184}
   - {fileID: 1754899089}
   - {fileID: 1754899088}
+  - {fileID: 695367981}
+  - {fileID: 695367984}
 --- !u!114 &1152588184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1152588188}
-  position: {x: 552, y: 312}
+  position: {x: 408, y: 296}
   ports:
     keys:
     - FlowInput
@@ -428,6 +433,127 @@ MonoBehaviour:
       _dynamic: 0
   _name: Send Global Event
   GameEvent: {fileID: 11400000, guid: f027698621d69fb4f853a33ae8fbe4da, type: 2}
+--- !u!114 &695367981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4558802602853102153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1152588188}
+  position: {x: 2175.2454, y: 323.64014}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 695367981}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 695367981}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 695367981}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1754899088}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 695367981}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Bool To Global Bool
+  Input: 0
+  Target: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
+--- !u!114 &695367984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4558802602853102153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1152588188}
+  position: {x: 104, y: 312}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 695367984}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 695367984}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 695367984}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1152588186}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 695367984}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1754899089}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Bool To Global Bool
+  Input: 1
+  Target: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
 --- !u!1001 &4398377408146777923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -495,11 +621,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1002304090212087141, guid: dcaf5b1981a6fe142896a2100742592c,
-        type: 3}
-      propertyPath: m_Length
-      value: 0.42692518
-      objectReference: {fileID: 0}
     - target: {fileID: 6267682507940137151, guid: dcaf5b1981a6fe142896a2100742592c,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -515,15 +636,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 25.435001
       objectReference: {fileID: 0}
+    - target: {fileID: 1002304090212087141, guid: dcaf5b1981a6fe142896a2100742592c,
+        type: 3}
+      propertyPath: m_Length
+      value: 0.42692518
+      objectReference: {fileID: 0}
     - target: {fileID: 1211701214406030928, guid: dcaf5b1981a6fe142896a2100742592c,
         type: 3}
       propertyPath: m_Length
       value: 0.66030264
-      objectReference: {fileID: 0}
-    - target: {fileID: 5035675825005785595, guid: dcaf5b1981a6fe142896a2100742592c,
-        type: 3}
-      propertyPath: m_Length
-      value: 0.6603033
       objectReference: {fileID: 0}
     - target: {fileID: 1412808384945515893, guid: dcaf5b1981a6fe142896a2100742592c,
         type: 3}
@@ -534,6 +655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Length
       value: 0.3746307
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035675825005785595, guid: dcaf5b1981a6fe142896a2100742592c,
+        type: 3}
+      propertyPath: m_Length
+      value: 0.6603033
       objectReference: {fileID: 0}
     - target: {fileID: 259465078863577657, guid: dcaf5b1981a6fe142896a2100742592c,
         type: 3}

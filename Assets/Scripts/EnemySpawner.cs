@@ -21,17 +21,16 @@ public class EnemySpawner : MonoBehaviour {
         _allEnemies = new List<EnemyController>();
 
         for (int i = 0; i < _currentLevel.Value + 1; i++) {
-            for (int j = 0; j < _enemyPrefabs.Length; j++) {
-                _spawnedEnemies++;
-                var targetPos = new Vector3(UnityEngine.Random.Range(30, 60), UnityEngine.Random.Range(0, 30), 0);
-                var instance = Instantiate(_enemyPrefabs[j]);
-                instance.transform.position = targetPos;
-                instance.OnEnemydied += OnEnemyDied;
-                var healthComp = instance.GetComponent<HealthComponent>();
-                healthComp.MaxHealth = ((int)_currentLevel.Value + 1) * _healthFactor;
-                healthComp.Health = healthComp.MaxHealth;
-                _allEnemies.Add(instance);
-            }
+            _spawnedEnemies++;
+            var prefab = _enemyPrefabs[Random.Range(0, _enemyPrefabs.Length)];
+            var instance = Instantiate(prefab);
+            var targetPos = new Vector3(Random.Range(30, 60), Random.Range(0, 30), 0);
+            instance.transform.position = targetPos;
+            instance.OnEnemydied += OnEnemyDied;
+            var healthComp = instance.GetComponent<HealthComponent>();
+            healthComp.MaxHealth = ((int)_currentLevel.Value + 1) * _healthFactor;
+            healthComp.Health = healthComp.MaxHealth;
+            _allEnemies.Add(instance);
         }
     }
 

@@ -998,6 +998,7 @@ MonoBehaviour:
   _enemyPrefabs:
   - {fileID: 8809372172185866159, guid: 41cff00ebf39b9141abc20f361b1c76d, type: 3}
   - {fileID: 3576829200228815581, guid: c458c11f559fef04aa16c31c0d6b0af2, type: 3}
+  - {fileID: 8724573908635276545, guid: ad81990a3b42aca47af66f4e6678a710, type: 3}
   _damageFeedbackPrefab: {fileID: 6818801035757333088, guid: 57cf5932c1493f143928c0f38e8bf088,
     type: 3}
   _currentLevel: {fileID: 11400000, guid: 4ff05dca8b42f674a95684de3a8e8043, type: 2}

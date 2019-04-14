@@ -47,7 +47,6 @@ public class HealthComponent : MonoBehaviour {
         if (Health <= 0) {
             _onDied?.SendEvent();
             OnEnemyDied?.Invoke();
-            gameObject.SetActive(false);
         }
 
         return true;

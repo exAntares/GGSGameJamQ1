@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
     [SerializeField] private EnemyController[] _enemyPrefabs;
+    [SerializeField] private DamageFeedback _damageFeedbackPrefab;
     [SerializeField] private GlobalFloat _currentLevel;
     [SerializeField] private ScriptableGameEvent _onAllEnemiesDied;
     [SerializeField] private int _healthFactor = 5;
@@ -13,6 +14,7 @@ public class EnemySpawner : MonoBehaviour {
     private List<EnemyController> _allEnemies;
 
     private void Awake() {
+        EnemyController.OnEnemyDamaged += OnEnemyDamaged;
         _spawnedEnemies = 0;
         _enemiesDead = 0;
 
@@ -31,6 +33,16 @@ public class EnemySpawner : MonoBehaviour {
                 _allEnemies.Add(instance);
             }
         }
+    }
+
+    private void OnDestroy() {
+        EnemyController.OnEnemyDamaged -= OnEnemyDamaged;
+    }
+
+    private void OnEnemyDamaged(EnemyController obj, int damage) {
+        var instance = Instantiate(_damageFeedbackPrefab);
+        instance.transform.position = obj.transform.position;
+        instance.SetText($"{damage}");
     }
 
     private void OnEnemyDied() {

@@ -70,7 +70,7 @@ MonoBehaviour:
   _maxGlobalHealth: {fileID: 0}
   _damageTaken: {fileID: 0}
   _onDamageTaken: {fileID: 0}
-  _onDied: {fileID: 0}
+  _onDied: {fileID: 11400000, guid: 2b2065c1031569542a0de4a14283a57b, type: 2}
 --- !u!114 &1619042045440170876
 MonoBehaviour:
   m_ObjectHideFlags: 0

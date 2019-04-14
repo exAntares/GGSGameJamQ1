@@ -211,6 +211,755 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &207322299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 207322305}
+  - component: {fileID: 207322304}
+  - component: {fileID: 207322303}
+  - component: {fileID: 207322302}
+  - component: {fileID: 207322301}
+  - component: {fileID: 207322300}
+  - component: {fileID: 207322311}
+  - component: {fileID: 207322310}
+  - component: {fileID: 207322309}
+  - component: {fileID: 207322308}
+  - component: {fileID: 207322307}
+  - component: {fileID: 207322306}
+  - component: {fileID: 207322315}
+  - component: {fileID: 207322314}
+  - component: {fileID: 207322313}
+  - component: {fileID: 207322312}
+  m_Layer: 0
+  m_Name: StatsCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &207322300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9ecb5a220be5743a7b8c300837419f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 1032, y: -232}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 207322300}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 207322302}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 207322300}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 207322300}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 207322303}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 207322300}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Float To Global Float
+  Input: 0
+  Target: {fileID: 11400000, guid: 91fd0672415054b4e91e2198de800aed, type: 2}
+--- !u!114 &207322301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 824, y: 104}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 207322301}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 207322301}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: FloatB
+        node: {fileID: 207322302}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 91fd0672415054b4e91e2198de800aed, type: 2}
+  Output: 0
+--- !u!114 &207322302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edef491b6b1c704d9419c082bff2f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 1000, y: -24}
+  ports:
+    keys:
+    - FloatA
+    - FloatB
+    - Result
+    values:
+    - _fieldName: FloatA
+      _node: {fileID: 207322302}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FloatB
+      _node: {fileID: 207322302}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 207322301}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Result
+      _node: {fileID: 207322302}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Input
+        node: {fileID: 207322300}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Add Float
+  FloatA: 1
+  FloatB: 0
+  MyOperation: 0
+  Result: 0
+--- !u!114 &207322303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c8beeddb0679442a1c25737bfac1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 472, y: -104}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _node: {fileID: 207322303}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 207322300}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: On Global Event
+  GameEvent: {fileID: 11400000, guid: f97b72cc6a6c68c49bf287c55e6e70db, type: 2}
+--- !u!114 &207322304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50eb01a099c629748b4b5134ff954189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 207322303}
+  - {fileID: 207322302}
+  - {fileID: 207322301}
+  - {fileID: 207322300}
+  - {fileID: 207322311}
+  - {fileID: 207322310}
+  - {fileID: 207322309}
+  - {fileID: 207322308}
+  - {fileID: 207322307}
+  - {fileID: 207322306}
+  - {fileID: 207322315}
+  - {fileID: 207322314}
+  - {fileID: 207322313}
+  - {fileID: 207322312}
+--- !u!4 &207322305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1037812, y: 0.06077756, z: 46.74515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &207322306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9ecb5a220be5743a7b8c300837419f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 1224, y: 712}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 207322306}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 207322310}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 207322306}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 207322306}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 207322307}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 207322306}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Float To Global Float
+  Input: 0
+  Target: {fileID: 11400000, guid: 9ac96dcdb7fdb05439f1242e2ef03291, type: 2}
+--- !u!114 &207322307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2231c8872ca6840814173ecf7c4792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 1048, y: 584}
+  ports:
+    keys:
+    - Bool
+    - FalseOutput
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Bool
+      _node: {fileID: 207322307}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 207322308}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FalseOutput
+      _node: {fileID: 207322307}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 207322307}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 207322311}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 207322307}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 207322306}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Bool Branch
+  Bool: 0
+--- !u!114 &207322308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41d5d1abc67721c4da971bde141aace3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 648, y: 488}
+  ports:
+    keys:
+    - InputA
+    - InputB
+    - Result
+    values:
+    - _fieldName: InputA
+      _node: {fileID: 207322308}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 207322310}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: InputB
+      _node: {fileID: 207322308}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 207322309}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Result
+      _node: {fileID: 207322308}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Bool
+        node: {fileID: 207322307}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Compare Float
+  InputA: 0
+  MyOperation: 4
+  InputB: 0
+  Result: 0
+--- !u!114 &207322309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 376, y: 520}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 207322309}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 207322309}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: InputB
+        node: {fileID: 207322308}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 9ac96dcdb7fdb05439f1242e2ef03291, type: 2}
+  Output: 0
+--- !u!114 &207322310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 328, y: 616}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 207322310}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 207322310}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: InputA
+        node: {fileID: 207322308}
+        reroutePoints: []
+      - fieldName: Input
+        node: {fileID: 207322306}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 4ff05dca8b42f674a95684de3a8e8043, type: 2}
+  Output: 0
+--- !u!114 &207322311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897a00302aa0b0a41af82c93fa1b7cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: 424, y: 344}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _node: {fileID: 207322311}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 207322307}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: On Start
+--- !u!114 &207322312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb9ecb5a220be5743a7b8c300837419f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: -216, y: -296}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 207322312}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Result
+        node: {fileID: 207322313}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 207322312}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 207322312}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 207322315}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 207322312}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Float To Global Float
+  Input: 0
+  Target: {fileID: 11400000, guid: 50b9f418edc8e8c439b11eac499e3923, type: 2}
+--- !u!114 &207322313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edef491b6b1c704d9419c082bff2f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: -488, y: -200}
+  ports:
+    keys:
+    - FloatA
+    - FloatB
+    - Result
+    values:
+    - _fieldName: FloatA
+      _node: {fileID: 207322313}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 207322314}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FloatB
+      _node: {fileID: 207322313}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Result
+      _node: {fileID: 207322313}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Input
+        node: {fileID: 207322312}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Add Float
+  FloatA: 0
+  FloatB: 1
+  MyOperation: 0
+  Result: 0
+--- !u!114 &207322314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: -760, y: -184}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 207322314}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 207322314}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: FloatA
+        node: {fileID: 207322313}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 50b9f418edc8e8c439b11eac499e3923, type: 2}
+  Output: 0
+--- !u!114 &207322315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207322299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c8beeddb0679442a1c25737bfac1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 207322304}
+  position: {x: -840, y: -328}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _node: {fileID: 207322315}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 207322312}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: On Global Event
+  GameEvent: {fileID: 11400000, guid: 2b2065c1031569542a0de4a14283a57b, type: 2}
 --- !u!212 &341915042 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 6571162103469933946, guid: 79e84f7b1626f8e4a96f8727f9b0779a,

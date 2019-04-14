@@ -150,10 +150,10 @@ RectTransform:
   m_Father: {fileID: 4361344560901632393}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37.75167, y: -16.87}
+  m_SizeDelta: {x: 75.50334, y: 33.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344559640173229
 CanvasRenderer:
@@ -306,10 +306,10 @@ RectTransform:
   m_Father: {fileID: 4361344559867277090}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 37.5, y: -13.9}
+  m_SizeDelta: {x: 75, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344559721985858
 CanvasRenderer:
@@ -385,10 +385,10 @@ RectTransform:
   m_Father: {fileID: 4361344560901632393}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 106.758354, y: -16.87}
+  m_SizeDelta: {x: 25.503342, y: 33.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344559848532669
 CanvasRenderer:
@@ -534,10 +534,10 @@ RectTransform:
   m_Father: {fileID: 4361344560152054626}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 97, y: -13.9}
+  m_SizeDelta: {x: 194, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344559872264395
 CanvasRenderer:
@@ -617,7 +617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 172.8, y: -46.399994}
+  m_AnchoredPosition: {x: 172.8, y: -46.39999}
   m_SizeDelta: {x: 277.4, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344559889085198
@@ -891,13 +891,15 @@ GameObject:
   - component: {fileID: 1246927919933305924}
   - component: {fileID: 7058350105460412627}
   - component: {fileID: 1247208145365210594}
+  - component: {fileID: 1439790148793375340}
+  - component: {fileID: 8250021646870940782}
   m_Layer: 5
   m_Name: PlayerInfoDialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4361344560162550042
 RectTransform:
   m_ObjectHideFlags: 0
@@ -971,7 +973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 1405704158}
-  position: {x: 11.5, y: 11}
+  position: {x: 408, y: 8}
   ports:
     keys:
     - Target
@@ -992,7 +994,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: FlowOutput
-        node: {fileID: 1405704157}
+        node: {fileID: 8250021646870940782}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -1041,7 +1043,10 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: FlowInput
-        node: {fileID: 1405704156}
+        node: {fileID: 1439790148793375340}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 8250021646870940782}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1070,6 +1075,8 @@ MonoBehaviour:
   - {fileID: 1246927919933305924}
   - {fileID: 7058350105460412627}
   - {fileID: 1247208145365210594}
+  - {fileID: 1439790148793375340}
+  - {fileID: 8250021646870940782}
 --- !u!114 &987559958960749330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,6 +1492,127 @@ MonoBehaviour:
   _name: Set Image
   Target: {fileID: 4361344559714635077}
   MySprite: {fileID: 0}
+--- !u!114 &1439790148793375340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344560162550043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1405704158}
+  position: {x: -136, y: 56}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 1439790148793375340}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 1439790148793375340}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 1439790148793375340}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1405704157}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 1439790148793375340}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Bool To Global Bool
+  Input: 0
+  Target: {fileID: 11400000, guid: c571c16c7f07d1e4ba1ba4411e6a332c, type: 2}
+--- !u!114 &8250021646870940782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344560162550043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809c76f94ac9f947a16c9d69d3495e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1405704158}
+  position: {x: -120, y: -88}
+  ports:
+    keys:
+    - Input
+    - Target
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Input
+      _node: {fileID: 8250021646870940782}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Target
+      _node: {fileID: 8250021646870940782}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalBoolean, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 8250021646870940782}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 1405704157}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 8250021646870940782}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 1405704156}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Bool To Global Bool
+  Input: 1
+  Target: {fileID: 11400000, guid: 19b0c95db6a76634cb8be1d79cce7ae9, type: 2}
 --- !u!1 &4361344560217350498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,10 +1645,10 @@ RectTransform:
   m_Father: {fileID: 4361344560003989125}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 186.5, y: -13.9}
+  m_SizeDelta: {x: 59, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344560217350503
 CanvasRenderer:
@@ -1969,10 +2097,10 @@ RectTransform:
   m_Father: {fileID: 4361344560901632393}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 84.75501, y: -16.87}
+  m_SizeDelta: {x: 18.503342, y: 33.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344560943040207
 CanvasRenderer:
@@ -2048,10 +2176,10 @@ RectTransform:
   m_Father: {fileID: 4361344561461407199}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 35.079998, y: -8.950001}
+  m_SizeDelta: {x: 70.159996, y: 17.900002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561015803551
 CanvasRenderer:
@@ -2130,10 +2258,10 @@ RectTransform:
   m_Father: {fileID: 4361344560152054626}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 223.5, y: -13.9}
+  m_SizeDelta: {x: 59, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561070007052
 CanvasRenderer:
@@ -2292,10 +2420,10 @@ RectTransform:
   m_Father: {fileID: 4361344559889085196}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 211.5, y: -13.9}
+  m_SizeDelta: {x: 59, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561268612125
 CanvasRenderer:
@@ -2526,7 +2654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 44.54, y: -0.00000040233}
+  m_AnchoredPosition: {x: 44.539993, y: -0.00000040233}
   m_SizeDelta: {x: 77.44, y: 73.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561352955893
@@ -2724,6 +2852,17 @@ GameObject:
   m_Component:
   - component: {fileID: 4361344561469223453}
   - component: {fileID: 4361344561469223452}
+  - component: {fileID: 8753604304803910917}
+  - component: {fileID: 719779191978959857}
+  - component: {fileID: 6076191626790667118}
+  - component: {fileID: 9197783807924835999}
+  - component: {fileID: 8314422055879850815}
+  - component: {fileID: 3939251647573944100}
+  - component: {fileID: 8869191341505561366}
+  - component: {fileID: 6190536283327681325}
+  - component: {fileID: 4521241610393205240}
+  - component: {fileID: 6906671105395637419}
+  - component: {fileID: 3214123467460879560}
   m_Layer: 5
   m_Name: PlayerStats
   m_TagString: Untagged
@@ -2763,6 +2902,508 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4361344561469223450}
   m_CullTransparentMesh: 0
+--- !u!114 &8753604304803910917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50eb01a099c629748b4b5134ff954189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 719779191978959857}
+  - {fileID: 6076191626790667118}
+  - {fileID: 9197783807924835999}
+  - {fileID: 8314422055879850815}
+  - {fileID: 3939251647573944100}
+  - {fileID: 8869191341505561366}
+  - {fileID: 6190536283327681325}
+  - {fileID: 4521241610393205240}
+  - {fileID: 6906671105395637419}
+  - {fileID: 3214123467460879560}
+--- !u!114 &719779191978959857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fe3cc4c36f85b4cbcb56baaaca48f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: -872, y: 1736}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _node: {fileID: 719779191978959857}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: On Update
+  Milliseconds: 50
+--- !u!114 &6076191626790667118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3914601464562214b9d382e97903d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: 76.10556, y: -244.48253}
+  ports:
+    keys:
+    - Target
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 6076191626790667118}
+      _typeQualifiedName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Text
+      _node: {fileID: 6076191626790667118}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 9197783807924835999}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 6076191626790667118}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 3214123467460879560}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 6076191626790667118}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Set Text
+  Target: {fileID: 4361344561268612122}
+  Text: 
+--- !u!114 &9197783807924835999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: -40, y: -104}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 9197783807924835999}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 9197783807924835999}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Text
+        node: {fileID: 6076191626790667118}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 50b9f418edc8e8c439b11eac499e3923, type: 2}
+  Output: 0
+--- !u!114 &8314422055879850815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3914601464562214b9d382e97903d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: 88, y: 40}
+  ports:
+    keys:
+    - Target
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 8314422055879850815}
+      _typeQualifiedName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Text
+      _node: {fileID: 8314422055879850815}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 3939251647573944100}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 8314422055879850815}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 3214123467460879560}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 8314422055879850815}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Set Text
+  Target: {fileID: 4361344561653827864}
+  Text: 
+--- !u!114 &3939251647573944100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: -168, y: 120}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 3939251647573944100}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 3939251647573944100}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Text
+        node: {fileID: 8314422055879850815}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 91fd0672415054b4e91e2198de800aed, type: 2}
+  Output: 0
+--- !u!114 &8869191341505561366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: -216, y: 360}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 8869191341505561366}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 8869191341505561366}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Text
+        node: {fileID: 6190536283327681325}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: 9ac96dcdb7fdb05439f1242e2ef03291, type: 2}
+  Output: 0
+--- !u!114 &6190536283327681325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3914601464562214b9d382e97903d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: 56, y: 296}
+  ports:
+    keys:
+    - Target
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 6190536283327681325}
+      _typeQualifiedName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Text
+      _node: {fileID: 6190536283327681325}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 8869191341505561366}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 6190536283327681325}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 3214123467460879560}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 6190536283327681325}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Set Text
+  Target: {fileID: 4361344561070007053}
+  Text: 
+--- !u!114 &4521241610393205240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31bcbf9cb5a4274fa6acf71c5a3bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: -216, y: 600}
+  ports:
+    keys:
+    - Input
+    - Output
+    values:
+    - _fieldName: Input
+      _node: {fileID: 4521241610393205240}
+      _typeQualifiedName: HalfBlind.ScriptableVariables.GlobalFloat, halfblind.scriptablevariables,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 4521241610393205240}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Text
+        node: {fileID: 6906671105395637419}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Global Float To Float
+  Input: {fileID: 11400000, guid: a57dceb274b9f294588a1af182929f77, type: 2}
+  Output: 0
+--- !u!114 &6906671105395637419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3914601464562214b9d382e97903d552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: 56, y: 536}
+  ports:
+    keys:
+    - Target
+    - Text
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Target
+      _node: {fileID: 6906671105395637419}
+      _typeQualifiedName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Text
+      _node: {fileID: 6906671105395637419}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Output
+        node: {fileID: 4521241610393205240}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 6906671105395637419}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 3214123467460879560}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 6906671105395637419}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Set Text
+  Target: {fileID: 4361344560217350500}
+  Text: 
+--- !u!114 &3214123467460879560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361344561469223450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5316d46b34213924faccc8a7bbceb601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 8753604304803910917}
+  position: {x: -664, y: 312}
+  ports:
+    keys:
+    - FlowOutput
+    values:
+    - _fieldName: FlowOutput
+      _node: {fileID: 3214123467460879560}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 6076191626790667118}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 8314422055879850815}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 6190536283327681325}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 6906671105395637419}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: On Enabled
 --- !u!1 &4361344561543412406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,10 +3517,10 @@ RectTransform:
   m_Father: {fileID: 4361344559889085196}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 91, y: -13.9}
+  m_SizeDelta: {x: 182, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561552234137
 CanvasRenderer:
@@ -2955,10 +3596,10 @@ RectTransform:
   m_Father: {fileID: 4361344561461407199}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 80.74, y: -8.950001}
+  m_SizeDelta: {x: 21.16, y: 17.900002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561554486453
 CanvasRenderer:
@@ -3034,10 +3675,10 @@ RectTransform:
   m_Father: {fileID: 4361344560003989125}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 78.5, y: -13.9}
+  m_SizeDelta: {x: 157, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561599236136
 CanvasRenderer:
@@ -3188,10 +3829,10 @@ RectTransform:
   m_Father: {fileID: 4361344559867277090}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 104.5, y: -13.9}
+  m_SizeDelta: {x: 59, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561653827867
 CanvasRenderer:
@@ -3269,10 +3910,10 @@ RectTransform:
   m_Father: {fileID: 4361344561461407199}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 105.399994, y: -8.950001}
+  m_SizeDelta: {x: 28.16, y: 17.900002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4361344561701083211
 CanvasRenderer:

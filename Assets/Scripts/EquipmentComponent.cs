@@ -12,6 +12,7 @@ public class EquipmentComponent : MonoBehaviour {
     public Sprite[] _possibleWeapons;
     public SpriteRenderer _hatRenderer;
     public SpriteRenderer _weaponRenderer;
+    public SpriteRenderer _trail;
 
     public event Action<ScriptableEquipment> OnCreatedNewItem;
 
@@ -21,6 +22,7 @@ public class EquipmentComponent : MonoBehaviour {
         _hatRenderer.color = _hat.value.Tint;
         _weaponRenderer.sprite = _weapon.value.Graphics;
         _weaponRenderer.color = _weapon.value.Tint;
+        _trail.color = _weapon.value.Tint;
     }
 
     private void OnDestroy() {

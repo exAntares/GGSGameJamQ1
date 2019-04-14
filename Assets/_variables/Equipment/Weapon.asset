@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _value:
     Type: 1
-    Graphics: {fileID: 21300000, guid: 946472f30a27a1d499eb8a7d311def87, type: 3}
+    Graphics: {fileID: 0}
     Tint: {r: 1, g: 1, b: 1, a: 1}
     ExtraHealth: 0
     ExtraDamage: 0

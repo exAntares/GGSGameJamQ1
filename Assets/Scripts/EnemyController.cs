@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour {
     [SerializeField] private GlobalBoolean _isGamePaused;
 
     public event Action OnEnemydied;
+    public static event Action<EnemyController, int> OnEnemyDamaged;
 
     private HeroController _player;
     private HealthComponent _healthComp;
@@ -51,6 +52,7 @@ public class EnemyController : MonoBehaviour {
     public void TakeDamage(int damage) {
         if (_healthComp.TakeDamage(damage)) {
             _animator.Play("OnHit");
+            OnEnemyDamaged?.Invoke(this, damage);
         }
     }
 }

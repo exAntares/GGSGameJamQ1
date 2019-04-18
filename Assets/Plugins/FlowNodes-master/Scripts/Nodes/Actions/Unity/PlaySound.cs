@@ -6,7 +6,7 @@ namespace HalfBlind.Nodes {
     public class PlaySound : FlowNode {
         [Input] public AudioClip Audio;
         [Input] public Vector3 TargetPosition;
-        [Input] public float Volume;
+        [Input] public float Volume = 1;
 
         public override void ExecuteNode() {
             var audio = GetInputValue<AudioClip>(nameof(Audio), Audio);

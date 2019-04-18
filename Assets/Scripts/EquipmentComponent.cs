@@ -50,7 +50,7 @@ public class EquipmentComponent : MonoBehaviour {
                 break;
         }
 
-        newItem.value.Tint = UnityEngine.Random.ColorHSV();
+        newItem.value.Tint = UnityEngine.Random.ColorHSV(0, 1, 0.5f, 1, 0.7f, 1);
         OnCreatedNewItem?.Invoke(newItem);
     }
 

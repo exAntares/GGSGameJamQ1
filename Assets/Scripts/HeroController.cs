@@ -61,7 +61,6 @@ public class HeroController : MonoBehaviour {
     private void Attack() {
         if (Time.time - _lastAttack > _attackSpeedSeconds) {
             _lastAttack = Time.time;
-            Debug.Log("Player Attacked!");
             _animator.Play("Attack");
             var actualOffset = _areaOfAttackOffset;
             actualOffset.x *= transform.localScale.x;

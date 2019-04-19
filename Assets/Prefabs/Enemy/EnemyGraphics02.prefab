@@ -331,6 +331,8 @@ GameObject:
   - component: {fileID: 2071926091632346865}
   - component: {fileID: 114175932386875780}
   - component: {fileID: 7458731184194404239}
+  - component: {fileID: 3445043112987429470}
+  - component: {fileID: 2782046849233319105}
   m_Layer: 0
   m_Name: EnemyGraphics02
   m_TagString: Untagged
@@ -394,6 +396,8 @@ MonoBehaviour:
   - {fileID: 2071926091632346865}
   - {fileID: 114175932386875780}
   - {fileID: 7458731184194404239}
+  - {fileID: 3445043112987429470}
+  - {fileID: 2782046849233319105}
 --- !u!114 &2071926091632346863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 2071926091632346864}
-  position: {x: 47.44999, y: -94.100006}
+  position: {x: 40, y: -88}
   ports:
     keys:
     - EventName
@@ -424,6 +428,9 @@ MonoBehaviour:
       - fieldName: Text
         node: {fileID: 114175932386875780}
         reroutePoints: []
+      - fieldName: StringA
+        node: {fileID: 3445043112987429470}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _dynamic: 0
@@ -437,6 +444,9 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: FlowInput
         node: {fileID: 114175932386875780}
+        reroutePoints: []
+      - fieldName: FlowInput
+        node: {fileID: 3445043112987429470}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -636,6 +646,149 @@ MonoBehaviour:
       _dynamic: 0
   _name: Play Sound
   Audio: {fileID: 8300000, guid: 95439765754c79e44adf8f5ca76cad04, type: 3}
+  TargetPosition: {x: 0, y: 0, z: 0}
+  Volume: 1
+--- !u!114 &3445043112987429470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539934365660224794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e00f6410aee4154a939f710838de62f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2071926091632346864}
+  position: {x: 411.50812, y: 165.23404}
+  ports:
+    keys:
+    - StringA
+    - StringB
+    - FalseOutput
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: StringA
+      _node: {fileID: 3445043112987429470}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: EventName
+        node: {fileID: 2071926091632346863}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: StringB
+      _node: {fileID: 3445043112987429470}
+      _typeQualifiedName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FalseOutput
+      _node: {fileID: 3445043112987429470}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 3445043112987429470}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 2071926091632346863}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 3445043112987429470}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowInput
+        node: {fileID: 2782046849233319105}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: String Branch
+  StringA: 
+  StringB: damaged@Enemy
+--- !u!114 &2782046849233319105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539934365660224794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d2c457d8277ce4fbbeed9a05b3b602, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 2071926091632346864}
+  position: {x: 808.5081, y: 255.23404}
+  ports:
+    keys:
+    - Audio
+    - TargetPosition
+    - Volume
+    - FlowInput
+    - FlowOutput
+    values:
+    - _fieldName: Audio
+      _node: {fileID: 2782046849233319105}
+      _typeQualifiedName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: TargetPosition
+      _node: {fileID: 2782046849233319105}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Volume
+      _node: {fileID: 2782046849233319105}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowInput
+      _node: {fileID: 2782046849233319105}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: FlowOutput
+        node: {fileID: 3445043112987429470}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: FlowOutput
+      _node: {fileID: 2782046849233319105}
+      _typeQualifiedName: XNode.Flow, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+  _name: Play Sound
+  Audio: {fileID: 8300000, guid: 1c85e5b7378e368498669e9df56fead3, type: 3}
   TargetPosition: {x: 0, y: 0, z: 0}
   Volume: 1
 --- !u!1 &5122604730524675852

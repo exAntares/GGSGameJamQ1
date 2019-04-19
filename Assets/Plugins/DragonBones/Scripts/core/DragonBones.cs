@@ -326,7 +326,7 @@ namespace DragonBones
                 for (int i = 0; i < this._objects.Count; ++i)
                 {
                     var obj = this._objects[i];
-                    obj?.ReturnToPool();
+                    obj.ReturnToPool();
                 }
 
                 this._objects.Clear();

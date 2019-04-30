@@ -8,6 +8,11 @@
     "com.unity.shadergraph": "5.7.2",
     "com.unity.textmeshpro": "2.0.0",
     "com.unity.timeline": "1.0.0",
+    "halfblind.attributes": "https://github.com/exAntares/halfblind.attributes.git#master",
+    "halfblind.flownodes": "https://github.com/exAntares/FlowNodes.git#master",
+    "halfblind.saveutils": "https://github.com/exAntares/halfblind.saveutils.git#master",
+    "halfblind.scriptablevariables": "https://github.com/exAntares/halfblind.scriptablevariables.git#master",
+    "halfblind.xnode": "https://github.com/exAntares/xNode.git#feature/MonoNodes",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",
@@ -38,5 +43,27 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "halfblind.attributes": {
+      "hash": "1e4786e98eafaaf500cb029d05297b3ff5c93012",
+      "revision": "master"
+    },
+    "halfblind.flownodes": {
+      "hash": "06462b60fd19912070ec7e4cc75120f060d4acd4",
+      "revision": "master"
+    },
+    "halfblind.saveutils": {
+      "hash": "771dd0d0a2a2b01bc524eb53e8c3bff6a6062bf5",
+      "revision": "master"
+    },
+    "halfblind.scriptablevariables": {
+      "hash": "afbf86bb3732e495a7e4ab4e679537113f922ac9",
+      "revision": "master"
+    },
+    "halfblind.xnode": {
+      "hash": "4cfccd4a462b4ed07b20074eb81d2d5e1d785312",
+      "revision": "feature/MonoNodes"
+    }
   }
 }
